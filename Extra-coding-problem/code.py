@@ -19,6 +19,7 @@ Explanation:
 - "1001" is the same backward as forward.
 - "110" is not the same backward as forward.'''
 
+'''One way:'''
 # t=int(input())
 # i=1
 # while i<=t:
@@ -34,8 +35,8 @@ Explanation:
 #     else:
 #         print("NO")
 
-
-for _ in range(int(input())):
-    s=input()
-    ans="YES" if s==s[::-1] else "NO" 
-    print(ans)
+'''Second way:'''
+# for _ in range(int(input())):
+#     s=input()
+#     ans="YES" if s==s[::-1] else "NO" 
+#     print(ans)
