@@ -1,0 +1,24 @@
+.product-card h3{
+    font-size: 40px;
+    color: rgb(119, 57, 57);
+    text-decoration: underline;
+}
+.product-card p{
+    line-height: 1.5;
+    background-color: rgb(151, 150, 150);
+}
+button[type~="button"]{
+    background-color: green;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 2px solid rgb(52, 80, 54);
+    color: whitesmoke;
+    font-weight: bold;
+}
+button:hover{
+    background-color: whitesmoke;
+    color: green;
+}
+li:hover{
+    color: blue;
+}

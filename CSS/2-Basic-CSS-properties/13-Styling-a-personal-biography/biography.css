@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(248, 212, 212);
+}
+h1{
+    color: purple;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+q{
+    font-weight: bold;
+    font-style: italic;
+}

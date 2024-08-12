@@ -1,0 +1,31 @@
+ul{
+    list-style-type: none;
+}
+.navbar{
+    padding: 1.5rem;
+    background-color: rgb(82, 80, 80);
+}
+#home-link{
+    color: red;
+}
+#about-link{
+    color: green;
+}
+#services-link{
+    color: pink;
+}
+#contact-link {
+    color: orange;
+}
+li::before{
+    content: "*";
+    color: white;
+    margin: 0.3rem;
+    font-size: 25px;
+}
+.main>li{
+    margin-bottom: 10px;
+}
+.submenu>li+li{
+    padding: 0.4rem;
+}
