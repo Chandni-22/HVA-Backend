@@ -218,5 +218,18 @@ Sample Input 2:
 How are you doing today?
 do
 Sample Output 2:
-No
-'''
+No'''
+
+# str=input("Write a sentance: ")
+# word=input("Enter the word: ")
+# l=len(word)
+# i=0
+# while i<len(str):
+#     store=str[i:i+l]  
+#     if store==word:
+#         if not(str[i-1].isalpha()) and not(str[i+l].isalpha()): 
+#             print("Yes")
+#             break
+#     i+=1
+# else:
+#     print("No")
