@@ -1,0 +1,32 @@
+.header,.footer,.main-content{
+    border: 2px solid black;
+}
+.header,.footer{
+    background-color: #4CAF50;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.column-2,.column-3{
+    float: left;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 200px;
+}
+.column-2{
+    width: 50%;
+}
+.column-3{
+    width: 33.3%;
+}
+/* Clearfix to ensure the parent .row element encloses its floated children
+content: ""; Inserts an empty content
+display: block; Makes the content a block-level element
+clear: both; Clears both left and right floats */
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}

@@ -1,0 +1,28 @@
+.header,.footer{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #4CAF50;
+    border: 2px solid black;
+}
+.main-content{
+    border: 2px solid black;
+    padding: 10px;
+}
+.row{
+    margin-bottom: 20px;
+}
+.column-2,.column-3{
+    display: inline-block;
+    height: 200px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.column-2{
+    width: 49%;
+}
+.column-3{
+    width: 32%;
+}

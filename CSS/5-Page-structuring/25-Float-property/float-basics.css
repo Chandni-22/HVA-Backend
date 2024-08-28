@@ -1,0 +1,14 @@
+.float-left{
+    float: left;
+    margin-right: 10px;
+}
+.float-right{
+    float: right;
+    margin-left: 10px;
+}
+.first-paragraph{
+    clear: none;
+}
+.second-paragraph{
+    clear: both;
+}
