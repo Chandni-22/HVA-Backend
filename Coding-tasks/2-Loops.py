@@ -62,3 +62,43 @@ Sample Output:
 #     if a<=n:
 #         print(a,end=" ")
 #     i+=1
+
+
+'''6.) First n Even Numbers: You are given an integer n. Print the first n even numbers.
+Sample Input: 
+7
+Sample Output: 
+2 4 6 8 10 12 14'''
+# n=int(input("Enter a number: "))
+# count,i=0,1
+# while count<n:
+#     if i%2==0:
+#         print(i,end=" ")
+#         count+=1
+#     i+=1
+
+
+'''7.) First n Odd Numbers: You are given an integer n. Print the first n odd numbers.
+Sample Input: 
+7
+Sample Output: 
+1 3 5 7 9 11 13'''
+# n=int(input("Enter a number: "))
+# count,i=0,1
+# while count<n:
+#     if i%2!=0:
+#         print(i,end=" ")
+#         count+=1
+#     i+=1
+
+
+'''8.) First n Square Numbers: You are given an integer n. Print the first n square numbers.
+Sample Input: 
+7
+Sample Output: 
+1 4 9 16 25 36 49'''
+# n=int(input("Enter a number: "))
+# i=1
+# while i<=n:
+#     print(i**2,end=" ")
+#     i+=1
