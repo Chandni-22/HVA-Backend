@@ -102,3 +102,45 @@ Sample Output:
 # while i<=n:
 #     print(i**2,end=" ")
 #     i+=1
+
+
+'''9.) Multiplication Table of n: You are given an integer n. Print the multiplication table of n till count 10.
+Sample Input: 
+7
+Sample Output: 
+7 14 21 28 35 42 49 56 63 70
+Explanation: Print 7*1, 7*2, …, 7*10.'''
+# n=int(input("Enter a number: "))
+# i=1
+# while i<=10:
+#     print(i*n,end=" ")
+#     i+=1
+
+
+'''10.) Factors of a Number: Write a program that takes a number n as input and prints all the factors of the number.
+Sample Input: 
+24
+Sample Output: 
+1 2 3 4 6 8 12 24
+Explanation: The factors of 24 are 1, 2, 3, 4, 6, 8, 12, 24.'''
+# n=int(input("Enter a number: "))
+# i=1
+# while i<=(n//2):
+#     if n%i==0:
+#         print(i,end=" ")
+#     i+=1
+# print(n)
+
+
+'''11.) Series: 3, 5, 7, 9, 11, …: You are given an integer n. Print first n terms of the series 3, 5, 7, 9, 11…
+Sample Input: 
+7
+Sample Output: 
+3 5 7 9 11 13 15
+Explanation: The series starts with 3 and every time adds 2 to get the next term.'''
+# n=int(input("Enter a number: "))
+# i,count=1,0
+# while count<n:
+#     i+=2
+#     print(i,end=" ")
+#     count+=1
