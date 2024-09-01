@@ -144,3 +144,104 @@ Explanation: The series starts with 3 and every time adds 2 to get the next term
 #     i+=2
 #     print(i,end=" ")
 #     count+=1
+
+
+'''12.) Series: 2, 5, 8, 11, 14, …: You are given an integer n. Print first n terms of the series 2, 5, 8, 11, 14…
+Sample Input: 
+7
+Sample Output: 
+2 5 8 11 14 17 20
+Explanation: The series starts with 2 and every time adds 3 to get the next term.'''
+# n=int(input("Enter a number: "))
+# i,count=2,0
+# while count<n:
+#     print(i,end=" ")
+#     count+=1
+#     i+=3
+
+
+'''13.) Series: 3, 6, 12, 24, 48, …: You are given an integer n. Print first n terms of the series 3, 6, 12, 24, 48…
+Sample Input: 
+7
+Sample Output: 
+3 6 12 24 48 96 192
+Explanation: The series starts with 3 and every time multiplies 2 to get the next term.'''
+# n=int(input("Enter a number: "))
+# i,count=3,0
+# while count<n:
+#     print(i,end=" ")
+#     count+=1
+#     i*=2
+
+
+'''14.) Sum of First n Natural Numbers: You are given an integer n. Print the sum of the first n Natural Numbers.
+Note: Use a loop instead of a mathematical formula.
+Sample Input: 
+7
+Sample Output: 
+28
+Explanation: Sum of 1+2+3+4+5+6+7 = 28'''
+# n=int(input("Enter a number: "))
+# i,sum=1,0
+# while i<=n:
+#     sum+=i
+#     i+=1
+# print(sum)
+
+
+'''15.) Sum of Series: 3, 5, 7, 9, 11, …: You are given an integer n. Print the sum of the first n terms of the series 3, 5, 7, 9, 11….
+Note: Use a loop instead of a mathematical formula.
+Sample Input: 
+7
+Sample Output: 
+63
+Explanation: Sum of 3+5+7+9+11+13+15 = 63'''
+# n=int(input("Enter a number: "))
+# i,count,sum=3,0,0
+# while count<n:
+#     print(i)
+#     sum+=i
+#     count+=1
+#     i+=2
+# print(sum)
+
+
+'''16.) Factorial of a Number: Write a program to calculate the factorial of a given number n. 
+The factorial of a number n is the product of all positive integers less than or equal to n.
+Sample Input: 
+6
+Sample Output: 
+720
+Explanation: 720 = 6*5*4*3*2*1'''
+# n=int(input("Enter a number: "))
+# i,factorial=1,1
+# while i<=n:
+#     factorial*=i
+#     i+=1
+# print(factorial)
+
+
+'''17.) Counting Digits in a Number: Write a program that takes a number n as input and prints the number of digits the number has.
+Sample Input: 
+1132
+Sample Output: 
+4'''
+# n=int(input("Enter a number: "))
+# count=0
+# while n>0:
+#     n=n//10
+#     count+=1
+# print(count)
+
+'''18.) Sum of Digits of a Number: Write a program that calculates the sum of all the digits in a given number n.
+Sample Input: 
+1132
+Sample Output: 
+7
+Explanation: 7 = 1+1+3+2'''
+# n=int(input("Enter a number: "))
+# sum=0
+# while n>0:
+#     sum+=n%10
+#     n=n//10
+# print(sum)
