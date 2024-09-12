@@ -107,3 +107,15 @@ Output: [0,1]
 #     else:
 #         i+=1
 # print(a)
+
+
+'''Problem 3.): Print all the possible subarrays [1,2,3,4,5,6,7,8,9,10].'''
+# arr=[1,2,3,4,5,6,7,8,9,10]
+# l=len(arr)
+# i=0
+# while i<l:
+#     j=i+1
+#     while j<=l:
+#         print(arr[i:j])
+#         j+=1
+#     i+=1
