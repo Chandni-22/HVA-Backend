@@ -267,6 +267,20 @@ Sample Input 2:
 Sample Output 2: 
 Not Possible
 Explanation 2: No subarray within the given array adds up to 14.'''
+# arr=list(map(int,input("Enter an array: ").split()))
+# t=int(input("Enter the target sum: "))
+# l=len(arr)
+# Min=[]
+# i=0
+# while i<l:
+#     j=i+1
+#     while j<=l:
+#         if sum((arr[i:j]))==t and Min>(arr[i:j]):
+#             Min=(arr[i:j])
+#         j+=1
+#     i+=1
+# ans=Min if Min else "Not Possible"
+# print(ans)
 
 
 '''12.) Check for a Subarray in an Array: You are given two arrays. Check if the second array is a subarray of the first array. Print yes if it is, else print no.
