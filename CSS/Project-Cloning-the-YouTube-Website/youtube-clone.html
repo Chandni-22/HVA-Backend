@@ -3,53 +3,768 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube Clone</title>
+    <title>YouTube</title>
+    <link rel="shortcut icon" href="things/favicon.png" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="youtube-clone.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header-left">
+    <!----------Header---------->
+    <header>
+        <div class="left">
+            <i class="fa-solid fa-bars"></i>
             <img src="things/YouTube_Logo.svg" alt="YouTube Logo" class="logo">
+            <span>IN</span>
         </div>
-        <div class="header-center">
-            <input type="text" class="search-bar" placeholder="Search">
-            <button class="search-button">🔍</button>
+        <div class="center">
+            <input type="text" placeholder="Search">
+            <button class="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <i class="fa-solid fa-microphone mic-icon"></i>
         </div>
-        <div class="header-right">
-            <img src="things/user-profile.png" alt="Profile" class="profile-icon">
+        <div class="right">
+            <i class="material-icons camera">video_call</i>
+            <i class="fa-regular fa-bell bell"></i>
+            <img src="things/user-img.jpg" alt="User profile">
         </div>
     </header>
 
-    <aside class="sidebar">
-        <ul>
-            <li>Home</li>
-            <li>Trending</li>
-            <li>Subscriptions</li>
-            <!-- Add more links here -->
-        </ul>
-    </aside>
 
-    <main class="content">
+
+
+
+
+    <!-- <aside>
+        <div class="sidebar">
+            <div class="menu-item active">
+                <i class="material-icons">home</i>
+                <span>Home</span>
+            </div>
+            <div class="menu-item">
+                <i class="material-icons">explore</i>
+                <span>Explore</span>
+            </div>
+            <div class="menu-item">
+                <i class="material-icons">subscriptions</i>
+                <span>Subscriptions</span>
+            </div>
+            <div class="menu-item">
+                <i class="material-icons">video_library</i>
+                <span>Library</span>
+            </div>
+            <div class="menu-item active">
+                <i class="material-icons">home</i>
+                <span>Home</span>
+            </div>
+            <div class="menu-item">
+                <i class="material-icons">explore</i>
+                <span>Explore</span>
+            </div>
+            <div class="menu-item">
+                <i class="material-icons">subscriptions</i>
+                <span>Subscriptions</span>
+            </div>
+            <div class="menu-item">
+                <i class="material-icons">video_library</i>
+                <span>Library</span>
+            </div>
+            <div class="menu-item active">
+                <i class="material-icons">home</i>
+                <span>Home</span>
+            </div>
+            <div class="menu-item">
+                <i class="material-icons">explore</i>
+                <span>Explore</span>
+            </div>
+            <div class="menu-item">
+                <i class="material-icons">subscriptions</i>
+                <span>Subscriptions</span>
+            </div>
+            <div class="menu-item">
+                <i class="material-icons">video_library</i>
+                <span>Library</span>
+            </div>
+            <div class="menu-item active">
+                <i class="material-icons">home</i>
+                <span>Home</span>
+            </div>
+            <div class="menu-item">
+                <i class="material-icons">explore</i>
+                <span>Explore</span>
+            </div>
+            <div class="menu-item">
+                <i class="material-icons">subscriptions</i>
+                <span>Subscriptions</span>
+            </div>
+            <div class="menu-item">
+                <i class="material-icons">video_library</i>
+                <span>Library</span>
+            </div>
+            <div class="menu-item active">
+                <i class="material-icons">home</i>
+                <span>Home</span>
+            </div>
+            <div class="menu-item">
+                <i class="material-icons">explore</i>
+                <span>Explore</span>
+            </div>
+            <div class="menu-item">
+                <i class="material-icons">subscriptions</i>
+                <span>Subscriptions</span>
+            </div>
+            <div class="menu-item">
+                <i class="material-icons">video_library</i>
+                <span>Library</span>
+            </div>
+            <div class="menu-item active">
+                <i class="material-icons">home</i>
+                <span>Home</span>
+            </div>
+            <div class="menu-item">
+                <i class="material-icons">explore</i>
+                <span>Explore</span>
+            </div>
+            <div class="menu-item">
+                <i class="material-icons">subscriptions</i>
+                <span>Subscriptions</span>
+            </div>
+            <div class="menu-item">
+                <i class="material-icons">video_library</i>
+                <span>Library</span>
+            </div>
+        </div>
+    </aside> -->
+
+    <!-- <main>
         <div class="video-grid">
             <div class="video-card">
-                <img src="video-thumbnail.jpg" alt="Thumbnail" class="thumbnail">
-                <div class="video-info">
-                    <p class="video-title">Video Title</p>
-                    <p class="video-channel">Channel Name</p>
-                    <p class="video-views">1M views</p>
+                <img src="https://via.placeholder.com/320x180" alt="Video Thumbnail">
+                <h3>Video Title</h3>
+                <p>Channel Name • 1M views • 1 year ago</p>
+            </div>
+            <div class="video-card">
+                <img src="https://via.placeholder.com/320x180" alt="Video Thumbnail">
+                <h3>Video Title</h3>
+                <p>Channel Name • 1M views • 1 year ago</p>
+            </div> -->
+            <!-- Repeat video cards as needed -->
+        <!-- </div>
+    </main> -->
+
+    <!-- main section -->
+    <!-- <main>
+        <aside>
+            <div class="aside-div aside-div-main">
+                <div class="content">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </div>
+                <div class="content">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>Shorts</span>
+                </div>
+                <div class="content">
+                    <i class="fa-solid fa-sliders"></i>
+                    <span>Subscriptions</span>
                 </div>
             </div>
-            <!-- Add more video cards here -->
-        </div>
-    </main>
+            <div class="aside-div">
+                <div class="content aside-title">
+                    <p>You</p>
+                </div>
+                <div class="content">
+                    <i class="fa-solid fa-user-plus"></i>
+                    <span>Your Channel</span>
+                </div>
+                <div class="content">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <span>History</span>
+                </div>
+                <div class="content">
+                    <i class="fa-solid fa-list"></i>
+                    <span>Playlists</span>
+                </div>
+                <div class="content">
+                    <i class="fa-solid fa-video"></i>
+                    <span>Your Videos</span>
+                </div>
+                <div class="content">
+                    <i class="fa-regular fa-clock"></i>
+                    <span>Watch Later</span>
+                </div>
+                <div class="content">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                    <span>Liked Videos</span>
+                </div>
+                <div class="content">
+                    <i class="fa-solid fa-download"></i>
+                    <span>Downloads</span>
+                </div>
+                <div class="content">
+                    <i class="fa-solid fa-scissors"></i>
+                    <span>Your Clips</span>
+                </div>
+            </div>
+            <div class="aside-div">
+                <div class="content aside-title">
+                    <p>Explore</p>
+                </div>
+                <div class="content">
+                    <i class="fa-solid fa-fire"></i>
+                    <span>Trending</span>
+                </div>
+                <div class="content">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span>Shopping</span>
+                </div>
+                <div class="content">
+                    <i class="fa-solid fa-music"></i>
+                    <span>Music</span>
+                </div>
+                <div class="content">
+                    <i class="fa-solid fa-clapperboard"></i>
+                    <span>Films</span>
+                </div>
+                <div class="content">
+                    <i class="fa-solid fa-satellite-dish"></i>
+                    <span>Live</span>
+                </div>
+                <div class="content">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <span>Gaming</span>
+                </div>
+                <div class="content">
+                    <i class="fa-solid fa-newspaper"></i>
+                    <span>News</span>
+                </div>
+                <div class="content">
+                    <i class="fa-solid fa-trophy"></i>
+                    <span>Sports</span>
+                </div>
+                <div class="content">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <span>Courses</span>
+                </div>
+                <div class="content">
+                    <i class="fa-solid fa-shirt"></i>
+                    <span>Fashion</span>
+                </div>
+                <div class="content">
+                    <i class="fa-solid fa-podcast"></i>
+                    <span>Podcasts</span>
+                </div>
+            </div>
+            <div class="aside-div">
+                <div class="content aside-title">
+                    <p>More From YouTube</p>
+                </div>
+                <div class="content">
+                    <img src="./assets/logo-&-img/premium.png" alt="logo">
+                    <span>YouTube Premium</span>
+                </div>
+                <div class="content">
+                    <img src="./assets/logo-&-img/studio.png" alt="logo">
+                    <span>YouTube Studio</span>
+                </div>
+                <div class="content">
+                    <img src="./assets/logo-&-img/music.png" alt="logo">
+                    <span>YouTube Music</span>
+                </div>
+                <div class="content">
+                    <img src="./assets/logo-&-img/kids.png" alt="logo">
+                    <span>YouTube Kids</span>
+                </div>
+            </div>
+            <div class="aside-div">
+                <div class="content">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Settings</span>
+                </div>
+                <div class="content">
+                    <i class="fa-solid fa-flag"></i>
+                    <span>Report History</span>
+                </div>
+                <div class="content">
+                    <i class="fa-solid fa-circle-question"></i>
+                    <span>Help</span>
+                </div>
+                <div class="content">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <span>Send Feedback</span>
+                </div>
+            </div>
+            <footer>
+                <div>
+                    <p>About Press Copyright</p>
+                    <p>Contact us Creator Advertise</p>
+                    <p>Developers</p>
+                </div>
+                <br>
+                <div>
+                    <p>Terms Privacy Policy & Safety</p>
+                    <p>How YouTube works</p>
+                    <p>Test new features</p>
+                </div>
+                <br>
+                <div>
+                    <span>&copy; 2024 Google LLC</span>
+                </div>
+            </footer>
+        </aside>
+        <section>
+            <div class="menu-section">
+                <span class="menu-button">All</span>
+                <span class="menu-button">Music</span>
+                <span class="menu-button">Mix</span>
+                <span class="menu-button">Programming</span>
+                <span class="menu-button">Manga</span>
+                <span class="menu-button">Gaming</span>
+                <span class="menu-button">T-Series</span>
+                <span class="menu-button">Anime</span>
+                <span class="menu-button">Movies</span>
+                <span class="menu-button">Mantras</span>
+                <span class="menu-button">Recently Uploaded</span>
+                <span class="menu-button">Watched</span>
+                <span class="menu-button">New To You</span>
+                <span class="menu-button">Debugging</span>
+                <span class="menu-button">Naruto</span>
+                <span class="menu-button">Indian pop Music</span>
+                <span class="menu-button">Hanuman Chalisha</span>
 
-    <footer class="footer">
-        <ul>
-            <li>About</li>
-            <li>Press</li>
-            <li>Copyright</li>
-            <li>Contact</li>
-        </ul>
-    </footer>
+                <span class="menu-button">Recently Uploaded</span>
+                <span class="menu-button">Watched</span>
+                <span class="menu-button">New To You</span>
+                <span class="menu-button">Debugging</span>
+                <span class="menu-button">Naruto</span>
+                <span class="menu-button">Indian pop music</span>
+                <span class="menu-button">Hanuman Chalisha</span>
+            </div>
+            
+            <div class="video-section">
+                <div class="video-container">
+                    <div class="img-container">
+                        <img src="assets/video-thumnails/1.jpg" alt="video-thumnails">
+                    </div>
+                    <div class="video-data">
+                        <div class="video-profile-title">
+                            <div class="video-profile">
+                                <img src="assets/video-profile-logos/1.jpg" alt="profile">
+                            </div>
+                            <div class="video-title">
+                                <p>Darkside「AMV」Anime Mix</p>
+                                <p><span>UnClonable</span></p>
+                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="video-container">
+                    <div class="img-container">
+                        <img src="assets/video-thumnails/2.jpg" alt="video-thumnails">
+                    </div>
+                    <div class="video-data">
+                        <div class="video-profile-title">
+                            <div class="video-profile">
+                                <img src="assets/video-profile-logos/2.jpg" alt="profile">
+                            </div>
+                            <div class="video-title">
+                                <p>Darkside「AMV」Anime Mix</p>
+                                <p><span>UnClonable</span></p>
+                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="video-container">
+                    <div class="img-container">
+                        <img src="assets/video-thumnails/3.jpg" alt="video-thumnails">
+                    </div>
+                    <div class="video-data">
+                        <div class="video-profile-title">
+                            <div class="video-profile">
+                                <img src="assets/video-profile-logos/3.jpg" alt="profile">
+                            </div>
+                            <div class="video-title">
+                                <p>Darkside「AMV」Anime Mix</p>
+                                <p><span>UnClonable</span></p>
+                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="video-container">
+                    <div class="img-container">
+                        <img src="assets/video-thumnails/4.jpg" alt="video-thumnails">
+                    </div>
+                    <div class="video-data">
+                        <div class="video-profile-title">
+                            <div class="video-profile">
+                                <img src="assets/video-profile-logos/4.jpg" alt="profile">
+                            </div>
+                            <div class="video-title">
+                                <p>Darkside「AMV」Anime Mix</p>
+                                <p><span>UnClonable</span></p>
+                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="video-container">
+                    <div class="img-container">
+                        <img src="assets/video-thumnails/5.jpg" alt="video-thumnails">
+                    </div>
+                    <div class="video-data">
+                        <div class="video-profile-title">
+                            <div class="video-profile">
+                                <img src="assets/video-profile-logos/5.jpg" alt="profile">
+                            </div>
+                            <div class="video-title">
+                                <p>Darkside「AMV」Anime Mix</p>
+                                <p><span>UnClonable</span></p>
+                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="video-container">
+                    <div class="img-container">
+                        <img src="assets/video-thumnails/6.jpg" alt="video-thumnails">
+                    </div>
+                    <div class="video-data">
+                        <div class="video-profile-title">
+                            <div class="video-profile">
+                                <img src="assets/video-profile-logos/6.jpg" alt="profile">
+                            </div>
+                            <div class="video-title">
+                                <p>Darkside「AMV」Anime Mix</p>
+                                <p><span>UnClonable</span></p>
+                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="video-container">
+                    <div class="img-container">
+                        <img src="assets/video-thumnails/7.jpg" alt="video-thumnails">
+                    </div>
+                    <div class="video-data">
+                        <div class="video-profile-title">
+                            <div class="video-profile">
+                                <img src="assets/video-profile-logos/7.jpg" alt="profile">
+                            </div>
+                            <div class="video-title">
+                                <p>Darkside「AMV」Anime Mix</p>
+                                <p><span>UnClonable</span></p>
+                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="video-container">
+                    <div class="img-container">
+                        <img src="assets/video-thumnails/8.jpg" alt="video-thumnails">
+                    </div>
+                    <div class="video-data">
+                        <div class="video-profile-title">
+                            <div class="video-profile">
+                                <img src="assets/video-profile-logos/8.jpg" alt="profile">
+                            </div>
+                            <div class="video-title">
+                                <p>Darkside「AMV」Anime Mix</p>
+                                <p><span>UnClonable</span></p>
+                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="video-container">
+                    <div class="img-container">
+                        <img src="assets/video-thumnails/9.jpg" alt="video-thumnails">
+                    </div>
+                    <div class="video-data">
+                        <div class="video-profile-title">
+                            <div class="video-profile">
+                                <img src="assets/video-profile-logos/9.jpg" alt="profile">
+                            </div>
+                            <div class="video-title">
+                                <p>Darkside「AMV」Anime Mix</p>
+                                <p><span>UnClonable</span></p>
+                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="video-container">
+                    <div class="img-container">
+                        <img src="assets/video-thumnails/10.jpg" alt="video-thumnails">
+                    </div>
+                    <div class="video-data">
+                        <div class="video-profile-title">
+                            <div class="video-profile">
+                                <img src="assets/video-profile-logos/10.jpg" alt="profile">
+                            </div>
+                            <div class="video-title">
+                                <p>Darkside「AMV」Anime Mix</p>
+                                <p><span>UnClonable</span></p>
+                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="video-container">
+                    <div class="img-container">
+                        <img src="assets/video-thumnails/11.jpg" alt="video-thumnails">
+                    </div>
+                    <div class="video-data">
+                        <div class="video-profile-title">
+                            <div class="video-profile">
+                                <img src="assets/video-profile-logos/11.jpg" alt="profile">
+                            </div>
+                            <div class="video-title">
+                                <p>Darkside「AMV」Anime Mix</p>
+                                <p><span>UnClonable</span></p>
+                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="video-container">
+                    <div class="img-container">
+                        <img src="assets/video-thumnails/12.jpg" alt="video-thumnails">
+                    </div>
+                    <div class="video-data">
+                        <div class="video-profile-title">
+                            <div class="video-profile">
+                                <img src="assets/video-profile-logos/12.jpg" alt="profile">
+                            </div>
+                            <div class="video-title">
+                                <p>Darkside「AMV」Anime Mix</p>
+                                <p><span>UnClonable</span></p>
+                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="video-container">
+                    <div class="img-container">
+                        <img src="assets/video-thumnails/13.jpg" alt="video-thumnails">
+                    </div>
+                    <div class="video-data">
+                        <div class="video-profile-title">
+                            <div class="video-profile">
+                                <img src="assets/video-profile-logos/13.jpg" alt="profile">
+                            </div>
+                            <div class="video-title">
+                                <p>Darkside「AMV」Anime Mix</p>
+                                <p><span>UnClonable</span></p>
+                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="video-container">
+                    <div class="img-container">
+                        <img src="assets/video-thumnails/14.jpg" alt="video-thumnails">
+                    </div>
+                    <div class="video-data">
+                        <div class="video-profile-title">
+                            <div class="video-profile">
+                                <img src="assets/video-profile-logos/14.jpg" alt="profile">
+                            </div>
+                            <div class="video-title">
+                                <p>Darkside「AMV」Anime Mix</p>
+                                <p><span>UnClonable</span></p>
+                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="video-container">
+                    <div class="img-container">
+                        <img src="assets/video-thumnails/15.jpg" alt="video-thumnails">
+                    </div>
+                    <div class="video-data">
+                        <div class="video-profile-title">
+                            <div class="video-profile">
+                                <img src="assets/video-profile-logos/15.jpg" alt="profile">
+                            </div>
+                            <div class="video-title">
+                                <p>Darkside「AMV」Anime Mix</p>
+                                <p><span>UnClonable</span></p>
+                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="video-container">
+                    <div class="img-container">
+                        <img src="assets/video-thumnails/16.jpg" alt="video-thumnails">
+                    </div>
+                    <div class="video-data">
+                        <div class="video-profile-title">
+                            <div class="video-profile">
+                                <img src="assets/video-profile-logos/16.jpg" alt="profile">
+                            </div>
+                            <div class="video-title">
+                                <p>Darkside「AMV」Anime Mix</p>
+                                <p><span>UnClonable</span></p>
+                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="video-container">
+                    <div class="img-container">
+                        <img src="assets/video-thumnails/17.jpg" alt="video-thumnails">
+                    </div>
+                    <div class="video-data">
+                        <div class="video-profile-title">
+                            <div class="video-profile">
+                                <img src="assets/video-profile-logos/17.jpg" alt="profile">
+                            </div>
+                            <div class="video-title">
+                                <p>Darkside「AMV」Anime Mix</p>
+                                <p><span>UnClonable</span></p>
+                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="video-container">
+                    <div class="img-container">
+                        <img src="assets/video-thumnails/18.jpg" alt="video-thumnails">
+                    </div>
+                    <div class="video-data">
+                        <div class="video-profile-title">
+                            <div class="video-profile">
+                                <img src="assets/video-profile-logos/18.png" alt="profile">
+                            </div>
+                            <div class="video-title">
+                                <p>Darkside「AMV」Anime Mix</p>
+                                <p><span>UnClonable</span></p>
+                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="video-container">
+                    <div class="img-container">
+                        <img src="assets/video-thumnails/19.jpg" alt="video-thumnails">
+                    </div>
+                    <div class="video-data">
+                        <div class="video-profile-title">
+                            <div class="video-profile">
+                                <img src="assets/video-profile-logos/19.jpg" alt="profile">
+                            </div>
+                            <div class="video-title">
+                                <p>Darkside「AMV」Anime Mix</p>
+                                <p><span>UnClonable</span></p>
+                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="video-container">
+                    <div class="img-container">
+                        <img src="assets/video-thumnails/20.jpg" alt="video-thumnails">
+                    </div>
+                    <div class="video-data">
+                        <div class="video-profile-title">
+                            <div class="video-profile">
+                                <img src="assets/video-profile-logos/20.jpg" alt="profile">
+                            </div>
+                            <div class="video-title">
+                                <p>Darkside「AMV」Anime Mix</p>
+                                <p><span>UnClonable</span></p>
+                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main> -->
 </body>
 </html>
