@@ -3,768 +3,851 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube</title>
-    <link rel="shortcut icon" href="things/favicon.png" type="image/x-icon">
+    <title>Youtube</title>
+    <link rel="shortcut icon" href="things/title-img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./youtube-clone.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="youtube-clone.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!----------Header---------->
     <header>
         <div class="left">
-            <i class="fa-solid fa-bars"></i>
-            <img src="things/YouTube_Logo.svg" alt="YouTube Logo" class="logo">
-            <span>IN</span>
+            <label for="openMenu">
+                <img src="things/navbar/menu-icon.svg" alt="Menu icon" class="hover">
+            </label>
+            <div class="left-div">
+                <img src="things/navbar/YouTube_Logo.svg" alt="YouTube Logo">
+                <sup>IN</sup>
+            </div>
         </div>
         <div class="center">
-            <input type="text" placeholder="Search">
-            <button class="search-btn">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-            <i class="fa-solid fa-microphone mic-icon"></i>
+            <form action="/result">
+                <input type="text" id="search" name="search" placeholder="Search">
+                <button type="button" class="search-btn">
+                    <img src="things/navbar/search-icon.svg" alt="Search icon">
+                </button>
+            </form>
+            <div>
+                <img src="things/navbar/mic-icon.svg" alt="Mic icon" class="mic hover">
+            </div>
         </div>
         <div class="right">
-            <i class="material-icons camera">video_call</i>
-            <i class="fa-regular fa-bell bell"></i>
-            <img src="things/user-img.jpg" alt="User profile">
+            <img src="things/navbar/record-icon.svg" alt="Record icon" class="hover">
+            <img src="things/navbar/bell-icon.svg" alt="Bell icon" class="hover">
+            <img class="user-img" src="things/navbar/user-img.jpg" alt="Profile">
         </div>
     </header>
+    
+    <!----------Main---------->
+     <main>
+        <!----------Small sidebar---------->
+        <input type="checkbox" id="openMenu">
+        <aside class="small-sidebar">
+            <div class="small-sidebar-div">
+                <img src="things/small-sidebar/home-icon.svg" alt="Home icon">
+                <p>Home</p>
+            </div>
+            <div class="small-sidebar-div">
+                <img src="things/small-sidebar/shorts-icon.svg" alt="Shorts icon">
+                <p>Shorts</p>
+            </div>
+            <div class="small-sidebar-div">
+                <img src="things/small-sidebar/subscription-icon.svg" alt="Subscription icon">
+                <p>Subscriptions</p>
+            </div>
+            <div class="small-sidebar-div">
+                <img src="things/small-sidebar/you-icon.svg" alt="You icon">
+                <p>You</p>
+            </div>
+        </aside>
 
-
-
-
-
-
-    <!-- <aside>
-        <div class="sidebar">
-            <div class="menu-item active">
-                <i class="material-icons">home</i>
-                <span>Home</span>
-            </div>
-            <div class="menu-item">
-                <i class="material-icons">explore</i>
-                <span>Explore</span>
-            </div>
-            <div class="menu-item">
-                <i class="material-icons">subscriptions</i>
-                <span>Subscriptions</span>
-            </div>
-            <div class="menu-item">
-                <i class="material-icons">video_library</i>
-                <span>Library</span>
-            </div>
-            <div class="menu-item active">
-                <i class="material-icons">home</i>
-                <span>Home</span>
-            </div>
-            <div class="menu-item">
-                <i class="material-icons">explore</i>
-                <span>Explore</span>
-            </div>
-            <div class="menu-item">
-                <i class="material-icons">subscriptions</i>
-                <span>Subscriptions</span>
-            </div>
-            <div class="menu-item">
-                <i class="material-icons">video_library</i>
-                <span>Library</span>
-            </div>
-            <div class="menu-item active">
-                <i class="material-icons">home</i>
-                <span>Home</span>
-            </div>
-            <div class="menu-item">
-                <i class="material-icons">explore</i>
-                <span>Explore</span>
-            </div>
-            <div class="menu-item">
-                <i class="material-icons">subscriptions</i>
-                <span>Subscriptions</span>
-            </div>
-            <div class="menu-item">
-                <i class="material-icons">video_library</i>
-                <span>Library</span>
-            </div>
-            <div class="menu-item active">
-                <i class="material-icons">home</i>
-                <span>Home</span>
-            </div>
-            <div class="menu-item">
-                <i class="material-icons">explore</i>
-                <span>Explore</span>
-            </div>
-            <div class="menu-item">
-                <i class="material-icons">subscriptions</i>
-                <span>Subscriptions</span>
-            </div>
-            <div class="menu-item">
-                <i class="material-icons">video_library</i>
-                <span>Library</span>
-            </div>
-            <div class="menu-item active">
-                <i class="material-icons">home</i>
-                <span>Home</span>
-            </div>
-            <div class="menu-item">
-                <i class="material-icons">explore</i>
-                <span>Explore</span>
-            </div>
-            <div class="menu-item">
-                <i class="material-icons">subscriptions</i>
-                <span>Subscriptions</span>
-            </div>
-            <div class="menu-item">
-                <i class="material-icons">video_library</i>
-                <span>Library</span>
-            </div>
-            <div class="menu-item active">
-                <i class="material-icons">home</i>
-                <span>Home</span>
-            </div>
-            <div class="menu-item">
-                <i class="material-icons">explore</i>
-                <span>Explore</span>
-            </div>
-            <div class="menu-item">
-                <i class="material-icons">subscriptions</i>
-                <span>Subscriptions</span>
-            </div>
-            <div class="menu-item">
-                <i class="material-icons">video_library</i>
-                <span>Library</span>
-            </div>
-        </div>
-    </aside> -->
-
-    <!-- <main>
-        <div class="video-grid">
-            <div class="video-card">
-                <img src="https://via.placeholder.com/320x180" alt="Video Thumbnail">
-                <h3>Video Title</h3>
-                <p>Channel Name • 1M views • 1 year ago</p>
-            </div>
-            <div class="video-card">
-                <img src="https://via.placeholder.com/320x180" alt="Video Thumbnail">
-                <h3>Video Title</h3>
-                <p>Channel Name • 1M views • 1 year ago</p>
-            </div> -->
-            <!-- Repeat video cards as needed -->
-        <!-- </div>
-    </main> -->
-
-    <!-- main section -->
-    <!-- <main>
-        <aside>
-            <div class="aside-div aside-div-main">
-                <div class="content">
-                    <i class="fa-solid fa-house"></i>
-                    <span>Home</span>
+        <!----------Big sidebar---------->
+        <aside class="side-bar">
+            <div class="sidebar-div">
+                <div class="sidebar-content">
+                    <img src="things/small-sidebar/home-icon.svg" alt="Home icon">
+                    <p>Home</p>
                 </div>
-                <div class="content">
-                    <i class="fa-solid fa-bolt"></i>
-                    <span>Shorts</span>
+                <div class="sidebar-content">
+                    <img src="things/small-sidebar/shorts-icon.svg" alt="Shorts icon">
+                    <p>Shorts</p>
                 </div>
-                <div class="content">
-                    <i class="fa-solid fa-sliders"></i>
-                    <span>Subscriptions</span>
+                <div class="sidebar-content">
+                    <img src="things/small-sidebar/subscription-icon.svg" alt="Subscription icon">
+                    <p>Subscriptions</p>
                 </div>
             </div>
-            <div class="aside-div">
-                <div class="content aside-title">
-                    <p>You</p>
+
+            <div class="sidebar-div">
+                <div class="sidebar-heading first">
+                    <h4>You</h4>
+                    <i class="fa-solid fa-greater-than you"></i>
                 </div>
-                <div class="content">
-                    <i class="fa-solid fa-user-plus"></i>
-                    <span>Your Channel</span>
+                <div class="sidebar-content">
+                    <img src="things/big-sidebar/you/history-icon.svg" alt="History icon">
+                    <p>History</p>
                 </div>
-                <div class="content">
-                    <i class="fa-solid fa-clock-rotate-left"></i>
-                    <span>History</span>
+                <div class="sidebar-content">
+                    <img src="things/big-sidebar/you/playlist-icon.svg" alt="Playlist icon">
+                    <p>Playlist</p>
                 </div>
-                <div class="content">
+                <div class="sidebar-content">
+                    <img src="things/big-sidebar/you/watch-later-icon.svg" alt="Watch later icon">
+                    <p>Watch later</p>
+                </div>
+                <div class="sidebar-content">
+                    <img src="things/big-sidebar/you/liked-icon.svg" alt="Liked videos icon">
+                    <p>Liked videos</p>
+                </div>
+            </div>
+
+            <div class="sidebar-div">
+                <div  class="sidebar-heading">
+                    <h4>Subscriptions</h4>
+                </div>
+                <div class="sidebar-content">
+                    <img class="sub" src="things/big-sidebar/subscriptions/priyanka.jpg" alt="Priyanka Dangwal">
+                    <span>Priyanka Dangwal</span>
+                </div>
+                <div class="sidebar-content">
+                    <img class="sub" src="./things/big-sidebar/subscriptions/sanam.jpg" alt="Sanam">
+                    <span>Sanam</span>
+                </div>
+                <div class="sidebar-content">
+                    <img class="sub" src="./things/big-sidebar/subscriptions/mycodeschool.jpg" alt="mycodeschool">
+                    <span>mycodeschool</span>
+                </div>
+                <div class="sidebar-content">
                     <i class="fa-solid fa-list"></i>
-                    <span>Playlists</span>
-                </div>
-                <div class="content">
-                    <i class="fa-solid fa-video"></i>
-                    <span>Your Videos</span>
-                </div>
-                <div class="content">
-                    <i class="fa-regular fa-clock"></i>
-                    <span>Watch Later</span>
-                </div>
-                <div class="content">
-                    <i class="fa-solid fa-thumbs-up"></i>
-                    <span>Liked Videos</span>
-                </div>
-                <div class="content">
-                    <i class="fa-solid fa-download"></i>
-                    <span>Downloads</span>
-                </div>
-                <div class="content">
-                    <i class="fa-solid fa-scissors"></i>
-                    <span>Your Clips</span>
+                    <span>All subscriptions</span>
                 </div>
             </div>
-            <div class="aside-div">
-                <div class="content aside-title">
-                    <p>Explore</p>
+
+            <div class="sidebar-div">
+                <div class="sidebar-heading">
+                    <h4>Explore</h4>
                 </div>
-                <div class="content">
-                    <i class="fa-solid fa-fire"></i>
-                    <span>Trending</span>
+                <div class="sidebar-content">
+                    <img src="things/big-sidebar/explore/trending-icon.svg" alt="Trending icon">
+                    <p>Trending</p>
                 </div>
-                <div class="content">
-                    <i class="fa-solid fa-bag-shopping"></i>
-                    <span>Shopping</span>
+                <div class="sidebar-content">
+                    <img src="things/big-sidebar/explore/shopping-icon.svg" alt="Shopping icon">
+                    <p>Shopping</p>
                 </div>
-                <div class="content">
-                    <i class="fa-solid fa-music"></i>
-                    <span>Music</span>
+                <div class="sidebar-content">
+                    <img src="things/big-sidebar/explore/music-icon.svg" alt="Music icon">
+                    <p>Music</p>
                 </div>
-                <div class="content">
-                    <i class="fa-solid fa-clapperboard"></i>
-                    <span>Films</span>
+                <div class="sidebar-content">
+                    <img src="things/big-sidebar/explore/movies-icon.svg" alt="Movies icon">
+                    <p>Movies</p>
                 </div>
-                <div class="content">
-                    <i class="fa-solid fa-satellite-dish"></i>
-                    <span>Live</span>
+                <div class="sidebar-content">
+                    <img src="things/big-sidebar/explore/live-icon.svg" alt="Live icon">
+                    <p>Live</p>
                 </div>
-                <div class="content">
-                    <i class="fa-solid fa-gamepad"></i>
-                    <span>Gaming</span>
+                <div class="sidebar-content">
+                    <img src="things/big-sidebar/explore/gaming-icon.svg" alt="Gaming icon">
+                    <p>Gaming</p>
                 </div>
-                <div class="content">
-                    <i class="fa-solid fa-newspaper"></i>
-                    <span>News</span>
+                <div class="sidebar-content">
+                    <img src="things/big-sidebar/explore/news-icon.svg" alt="News icon">
+                    <p>News</p>
                 </div>
-                <div class="content">
-                    <i class="fa-solid fa-trophy"></i>
-                    <span>Sports</span>
+                <div class="sidebar-content">
+                    <img src="things/big-sidebar/explore/sports-icon.svg" alt="Shorts icon">
+                    <p>Sports</p>
                 </div>
-                <div class="content">
-                    <i class="fa-solid fa-lightbulb"></i>
-                    <span>Courses</span>
+                <div class="sidebar-content">
+                    <img src="things/big-sidebar/explore/courses-icon.svg" alt="Courses icon">
+                    <p>Courses</p>
                 </div>
-                <div class="content">
-                    <i class="fa-solid fa-shirt"></i>
-                    <span>Fashion</span>
+                <div class="sidebar-content">
+                    <img src="things/big-sidebar/explore/fashion-icon.svg" alt="Fashion & Beauty icon">
+                    <p>Fashion & Beauty</p>
                 </div>
-                <div class="content">
-                    <i class="fa-solid fa-podcast"></i>
-                    <span>Podcasts</span>
-                </div>
-            </div>
-            <div class="aside-div">
-                <div class="content aside-title">
-                    <p>More From YouTube</p>
-                </div>
-                <div class="content">
-                    <img src="./assets/logo-&-img/premium.png" alt="logo">
-                    <span>YouTube Premium</span>
-                </div>
-                <div class="content">
-                    <img src="./assets/logo-&-img/studio.png" alt="logo">
-                    <span>YouTube Studio</span>
-                </div>
-                <div class="content">
-                    <img src="./assets/logo-&-img/music.png" alt="logo">
-                    <span>YouTube Music</span>
-                </div>
-                <div class="content">
-                    <img src="./assets/logo-&-img/kids.png" alt="logo">
-                    <span>YouTube Kids</span>
+                <div class="sidebar-content">
+                    <img src="things/big-sidebar/explore/podcast-icon.svg" alt="Podcast icon">
+                    <p>Podcast</p>
                 </div>
             </div>
-            <div class="aside-div">
-                <div class="content">
-                    <i class="fa-solid fa-gear"></i>
-                    <span>Settings</span>
+
+            <div class="sidebar-div">
+                <div class="sidebar-heading">
+                    <h4>More from YouTube</h4>
                 </div>
-                <div class="content">
-                    <i class="fa-solid fa-flag"></i>
-                    <span>Report History</span>
+                <div class="sidebar-content">
+                    <img src="things/big-sidebar/more-from-youtube/premium.png" alt="YouTube Premium" class="premium-svg">
+                    <p>YouTube Premium</p>
                 </div>
-                <div class="content">
-                    <i class="fa-solid fa-circle-question"></i>
-                    <span>Help</span>
+                <div class="sidebar-content">
+                    <img src="things/big-sidebar/more-from-youtube/music.png" alt="YouTube Music" class="premium-svg">
+                    <p>YouTube Music</p>
                 </div>
-                <div class="content">
-                    <i class="fa-solid fa-paper-plane"></i>
-                    <span>Send Feedback</span>
+                <div class="sidebar-content">
+                    <img src="things/big-sidebar/more-from-youtube/kids.png" alt="YouTube Kids" class="premium-svg">
+                    <p>YouTube Kids</p>
                 </div>
             </div>
+
+            <div class="sidebar-div">
+                <div class="sidebar-content">
+                    <img src="things/big-sidebar/settings/settings-icon.svg" alt="Settings icon">
+                    <p>Settings</p>
+                </div>
+                <div class="sidebar-content">
+                    <img src="things/big-sidebar/settings/report-history-icon.svg" alt="Report history icon">
+                    <p>Report history</p>
+                </div>
+                <div class="sidebar-content">
+                    <img src="things/big-sidebar/settings/help-icon.svg" alt="Help icon">
+                    <p>Help</p>
+                </div>
+                <div class="sidebar-content">
+                    <img src="things/big-sidebar/settings/feedback-icon.svg" alt="Feedback icon">
+                    <p>Send feedback</p>
+                </div>
+            </div>
+
+            <!----------Footer---------->
             <footer>
-                <div>
-                    <p>About Press Copyright</p>
-                    <p>Contact us Creator Advertise</p>
-                    <p>Developers</p>
-                </div>
-                <br>
-                <div>
-                    <p>Terms Privacy Policy & Safety</p>
-                    <p>How YouTube works</p>
-                    <p>Test new features</p>
-                </div>
-                <br>
-                <div>
-                    <span>&copy; 2024 Google LLC</span>
+                <p class="footer-content">About Press Copyright Contact us Creators Advertise Developers</p>
+                <p class="footer-content">Terms Privacy Policy & Safety How YouTube worksTest new features</p>
+                <div class="footer-content">
+                    <p>&copy; 2024 Google LLC</p>
                 </div>
             </footer>
         </aside>
-        <section>
-            <div class="menu-section">
-                <span class="menu-button">All</span>
-                <span class="menu-button">Music</span>
-                <span class="menu-button">Mix</span>
-                <span class="menu-button">Programming</span>
-                <span class="menu-button">Manga</span>
-                <span class="menu-button">Gaming</span>
-                <span class="menu-button">T-Series</span>
-                <span class="menu-button">Anime</span>
-                <span class="menu-button">Movies</span>
-                <span class="menu-button">Mantras</span>
-                <span class="menu-button">Recently Uploaded</span>
-                <span class="menu-button">Watched</span>
-                <span class="menu-button">New To You</span>
-                <span class="menu-button">Debugging</span>
-                <span class="menu-button">Naruto</span>
-                <span class="menu-button">Indian pop Music</span>
-                <span class="menu-button">Hanuman Chalisha</span>
 
-                <span class="menu-button">Recently Uploaded</span>
-                <span class="menu-button">Watched</span>
-                <span class="menu-button">New To You</span>
-                <span class="menu-button">Debugging</span>
-                <span class="menu-button">Naruto</span>
-                <span class="menu-button">Indian pop music</span>
-                <span class="menu-button">Hanuman Chalisha</span>
-            </div>
-            
-            <div class="video-section">
-                <div class="video-container">
-                    <div class="img-container">
-                        <img src="assets/video-thumnails/1.jpg" alt="video-thumnails">
-                    </div>
-                    <div class="video-data">
-                        <div class="video-profile-title">
-                            <div class="video-profile">
-                                <img src="assets/video-profile-logos/1.jpg" alt="profile">
-                            </div>
-                            <div class="video-title">
-                                <p>Darkside「AMV」Anime Mix</p>
-                                <p><span>UnClonable</span></p>
-                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
-                            </div>
-                        </div>
-                        <div class="video-info">
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </div>
-                    </div>
+        <!----------Suggestions scrollbar---------->
+        <div class="suggestion">
+            <div class="all">All</div>
+            <div class="suggestion-content">Music</div>
+            <div class="suggestion-content">Mythology</div>
+            <div class="suggestion-content">Javasript</div>
+            <div class="suggestion-content">Thrillers</div>
+            <div class="suggestion-content">Linux</div>
+            <div class="suggestion-content">Data Structures</div>
+            <div class="suggestion-content">Desktop computers</div>
+            <div class="suggestion-content">T-Series</div>
+            <div class="suggestion-content">Archaeology</div>
+            <div class="suggestion-content">Mantras</div>
+            <div class="suggestion-content">Web series</div>
+            <div class="suggestion-content">Live</div>
+            <div class="suggestion-content">SQL</div>
+            <div class="suggestion-content">Information technology</div>
+            <div class="suggestion-content">AI</div>
+            <div class="suggestion-content">Compiler</div>
+            <div class="suggestion-content">Dramedy</div>
+            <div class="suggestion-content">Electronic dance music</div>
+            <div class="suggestion-content">Recently uploded</div>
+            <div class="suggestion-content">Watched</div>
+            <div class="suggestion-content">New to you</div>
+        </div>
 
+        <!----------Video grid---------->
+        <div class="video-section">
+            <input type="checkbox" id="openMenu">
+
+            <div class="section-div">
+                <div class="thumbnail-div">
+                    <video controls loop muted poster="things/videos/1.jpg" src="things/videos/video.mp4" class="thumbnail"></video>
                 </div>
-                <div class="video-container">
-                    <div class="img-container">
-                        <img src="assets/video-thumnails/2.jpg" alt="video-thumnails">
-                    </div>
-                    <div class="video-data">
-                        <div class="video-profile-title">
-                            <div class="video-profile">
-                                <img src="assets/video-profile-logos/2.jpg" alt="profile">
-                            </div>
-                            <div class="video-title">
-                                <p>Darkside「AMV」Anime Mix</p>
-                                <p><span>UnClonable</span></p>
-                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
-                            </div>
-                        </div>
-                        <div class="video-info">
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                <div class="viedo-cap">
+                    <img class="user-image" src="things/videos/channels-profile.jpg" alt="user-image">
+                    <div class="about-video">
+                        <p class="title">संपूर्ण गीता & MAHABHARAT in 9 Minutes RAP | @djinkarnate  🔥 | Kavi Amit Sharma</p>
+                        <p class="channel">AbbyViral</p>
+                        <div class="reaching">
+                            <p class="view">12M views</p>
+                            <div class="seprator"></div>
+                            <p class="date">1 year ago</p>
                         </div>
                     </div>
-
-                </div>
-                <div class="video-container">
-                    <div class="img-container">
-                        <img src="assets/video-thumnails/3.jpg" alt="video-thumnails">
+                    <div class="more-button">
+                        <img src="things/videos/3-dots.svg" alt="">
                     </div>
-                    <div class="video-data">
-                        <div class="video-profile-title">
-                            <div class="video-profile">
-                                <img src="assets/video-profile-logos/3.jpg" alt="profile">
-                            </div>
-                            <div class="video-title">
-                                <p>Darkside「AMV」Anime Mix</p>
-                                <p><span>UnClonable</span></p>
-                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
-                            </div>
-                        </div>
-                        <div class="video-info">
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="video-container">
-                    <div class="img-container">
-                        <img src="assets/video-thumnails/4.jpg" alt="video-thumnails">
-                    </div>
-                    <div class="video-data">
-                        <div class="video-profile-title">
-                            <div class="video-profile">
-                                <img src="assets/video-profile-logos/4.jpg" alt="profile">
-                            </div>
-                            <div class="video-title">
-                                <p>Darkside「AMV」Anime Mix</p>
-                                <p><span>UnClonable</span></p>
-                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
-                            </div>
-                        </div>
-                        <div class="video-info">
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="video-container">
-                    <div class="img-container">
-                        <img src="assets/video-thumnails/5.jpg" alt="video-thumnails">
-                    </div>
-                    <div class="video-data">
-                        <div class="video-profile-title">
-                            <div class="video-profile">
-                                <img src="assets/video-profile-logos/5.jpg" alt="profile">
-                            </div>
-                            <div class="video-title">
-                                <p>Darkside「AMV」Anime Mix</p>
-                                <p><span>UnClonable</span></p>
-                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
-                            </div>
-                        </div>
-                        <div class="video-info">
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="video-container">
-                    <div class="img-container">
-                        <img src="assets/video-thumnails/6.jpg" alt="video-thumnails">
-                    </div>
-                    <div class="video-data">
-                        <div class="video-profile-title">
-                            <div class="video-profile">
-                                <img src="assets/video-profile-logos/6.jpg" alt="profile">
-                            </div>
-                            <div class="video-title">
-                                <p>Darkside「AMV」Anime Mix</p>
-                                <p><span>UnClonable</span></p>
-                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
-                            </div>
-                        </div>
-                        <div class="video-info">
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="video-container">
-                    <div class="img-container">
-                        <img src="assets/video-thumnails/7.jpg" alt="video-thumnails">
-                    </div>
-                    <div class="video-data">
-                        <div class="video-profile-title">
-                            <div class="video-profile">
-                                <img src="assets/video-profile-logos/7.jpg" alt="profile">
-                            </div>
-                            <div class="video-title">
-                                <p>Darkside「AMV」Anime Mix</p>
-                                <p><span>UnClonable</span></p>
-                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
-                            </div>
-                        </div>
-                        <div class="video-info">
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="video-container">
-                    <div class="img-container">
-                        <img src="assets/video-thumnails/8.jpg" alt="video-thumnails">
-                    </div>
-                    <div class="video-data">
-                        <div class="video-profile-title">
-                            <div class="video-profile">
-                                <img src="assets/video-profile-logos/8.jpg" alt="profile">
-                            </div>
-                            <div class="video-title">
-                                <p>Darkside「AMV」Anime Mix</p>
-                                <p><span>UnClonable</span></p>
-                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
-                            </div>
-                        </div>
-                        <div class="video-info">
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="video-container">
-                    <div class="img-container">
-                        <img src="assets/video-thumnails/9.jpg" alt="video-thumnails">
-                    </div>
-                    <div class="video-data">
-                        <div class="video-profile-title">
-                            <div class="video-profile">
-                                <img src="assets/video-profile-logos/9.jpg" alt="profile">
-                            </div>
-                            <div class="video-title">
-                                <p>Darkside「AMV」Anime Mix</p>
-                                <p><span>UnClonable</span></p>
-                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
-                            </div>
-                        </div>
-                        <div class="video-info">
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="video-container">
-                    <div class="img-container">
-                        <img src="assets/video-thumnails/10.jpg" alt="video-thumnails">
-                    </div>
-                    <div class="video-data">
-                        <div class="video-profile-title">
-                            <div class="video-profile">
-                                <img src="assets/video-profile-logos/10.jpg" alt="profile">
-                            </div>
-                            <div class="video-title">
-                                <p>Darkside「AMV」Anime Mix</p>
-                                <p><span>UnClonable</span></p>
-                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
-                            </div>
-                        </div>
-                        <div class="video-info">
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="video-container">
-                    <div class="img-container">
-                        <img src="assets/video-thumnails/11.jpg" alt="video-thumnails">
-                    </div>
-                    <div class="video-data">
-                        <div class="video-profile-title">
-                            <div class="video-profile">
-                                <img src="assets/video-profile-logos/11.jpg" alt="profile">
-                            </div>
-                            <div class="video-title">
-                                <p>Darkside「AMV」Anime Mix</p>
-                                <p><span>UnClonable</span></p>
-                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
-                            </div>
-                        </div>
-                        <div class="video-info">
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="video-container">
-                    <div class="img-container">
-                        <img src="assets/video-thumnails/12.jpg" alt="video-thumnails">
-                    </div>
-                    <div class="video-data">
-                        <div class="video-profile-title">
-                            <div class="video-profile">
-                                <img src="assets/video-profile-logos/12.jpg" alt="profile">
-                            </div>
-                            <div class="video-title">
-                                <p>Darkside「AMV」Anime Mix</p>
-                                <p><span>UnClonable</span></p>
-                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
-                            </div>
-                        </div>
-                        <div class="video-info">
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="video-container">
-                    <div class="img-container">
-                        <img src="assets/video-thumnails/13.jpg" alt="video-thumnails">
-                    </div>
-                    <div class="video-data">
-                        <div class="video-profile-title">
-                            <div class="video-profile">
-                                <img src="assets/video-profile-logos/13.jpg" alt="profile">
-                            </div>
-                            <div class="video-title">
-                                <p>Darkside「AMV」Anime Mix</p>
-                                <p><span>UnClonable</span></p>
-                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
-                            </div>
-                        </div>
-                        <div class="video-info">
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="video-container">
-                    <div class="img-container">
-                        <img src="assets/video-thumnails/14.jpg" alt="video-thumnails">
-                    </div>
-                    <div class="video-data">
-                        <div class="video-profile-title">
-                            <div class="video-profile">
-                                <img src="assets/video-profile-logos/14.jpg" alt="profile">
-                            </div>
-                            <div class="video-title">
-                                <p>Darkside「AMV」Anime Mix</p>
-                                <p><span>UnClonable</span></p>
-                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
-                            </div>
-                        </div>
-                        <div class="video-info">
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="video-container">
-                    <div class="img-container">
-                        <img src="assets/video-thumnails/15.jpg" alt="video-thumnails">
-                    </div>
-                    <div class="video-data">
-                        <div class="video-profile-title">
-                            <div class="video-profile">
-                                <img src="assets/video-profile-logos/15.jpg" alt="profile">
-                            </div>
-                            <div class="video-title">
-                                <p>Darkside「AMV」Anime Mix</p>
-                                <p><span>UnClonable</span></p>
-                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
-                            </div>
-                        </div>
-                        <div class="video-info">
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="video-container">
-                    <div class="img-container">
-                        <img src="assets/video-thumnails/16.jpg" alt="video-thumnails">
-                    </div>
-                    <div class="video-data">
-                        <div class="video-profile-title">
-                            <div class="video-profile">
-                                <img src="assets/video-profile-logos/16.jpg" alt="profile">
-                            </div>
-                            <div class="video-title">
-                                <p>Darkside「AMV」Anime Mix</p>
-                                <p><span>UnClonable</span></p>
-                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
-                            </div>
-                        </div>
-                        <div class="video-info">
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="video-container">
-                    <div class="img-container">
-                        <img src="assets/video-thumnails/17.jpg" alt="video-thumnails">
-                    </div>
-                    <div class="video-data">
-                        <div class="video-profile-title">
-                            <div class="video-profile">
-                                <img src="assets/video-profile-logos/17.jpg" alt="profile">
-                            </div>
-                            <div class="video-title">
-                                <p>Darkside「AMV」Anime Mix</p>
-                                <p><span>UnClonable</span></p>
-                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
-                            </div>
-                        </div>
-                        <div class="video-info">
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="video-container">
-                    <div class="img-container">
-                        <img src="assets/video-thumnails/18.jpg" alt="video-thumnails">
-                    </div>
-                    <div class="video-data">
-                        <div class="video-profile-title">
-                            <div class="video-profile">
-                                <img src="assets/video-profile-logos/18.png" alt="profile">
-                            </div>
-                            <div class="video-title">
-                                <p>Darkside「AMV」Anime Mix</p>
-                                <p><span>UnClonable</span></p>
-                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
-                            </div>
-                        </div>
-                        <div class="video-info">
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="video-container">
-                    <div class="img-container">
-                        <img src="assets/video-thumnails/19.jpg" alt="video-thumnails">
-                    </div>
-                    <div class="video-data">
-                        <div class="video-profile-title">
-                            <div class="video-profile">
-                                <img src="assets/video-profile-logos/19.jpg" alt="profile">
-                            </div>
-                            <div class="video-title">
-                                <p>Darkside「AMV」Anime Mix</p>
-                                <p><span>UnClonable</span></p>
-                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
-                            </div>
-                        </div>
-                        <div class="video-info">
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="video-container">
-                    <div class="img-container">
-                        <img src="assets/video-thumnails/20.jpg" alt="video-thumnails">
-                    </div>
-                    <div class="video-data">
-                        <div class="video-profile-title">
-                            <div class="video-profile">
-                                <img src="assets/video-profile-logos/20.jpg" alt="profile">
-                            </div>
-                            <div class="video-title">
-                                <p>Darkside「AMV」Anime Mix</p>
-                                <p><span>UnClonable</span></p>
-                                <p><span>19M views</span>&nbsp;&nbsp;<span>1 year ago</span></p>
-                            </div>
-                        </div>
-                        <div class="video-info">
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </div>
-                    </div>
-
                 </div>
             </div>
-        </section>
-    </main> -->
+
+            <div class="section-div">
+                <div class="image">
+                    <img class="thumbnail" src="things/videos/2.webp" alt="Thumbnail image">
+                </div>
+                <div class="viedo-cap">
+                    <div class="user">
+                        <img class="user-image" src="things/videos/channels-profile2.jpg" alt="user-image">
+                    </div>
+                    <div class="about-video">
+                        <p class="title">Agam - Krishna Ki Chetavani (Rashmirathi) | Shreeman Narayan Narayan Hari Hari | Krishna Bhajan</p>
+                        <p class="channel">Agam Aggarwal</p>
+                        <div class="reaching">
+                            <p class="view">10M views</p>
+                            <div class="seprator"></div>
+                            <p class="date">1 year ago</p>
+                        </div>
+                    </div>
+                    <div class="more-button">
+                        <img src="things/videos/3-dots.svg" alt="three dots">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-div">
+                <div class="image">
+                    <img class="thumbnail" src="things/videos/2.webp" alt="Thumbnail image">
+                </div>
+                <div class="viedo-cap">
+                    <div class="user">
+                        <img class="user-image" src="things/videos/channels-profile2.jpg" alt="user-image">
+                    </div>
+                    <div class="about-video">
+                        <p class="title">Agam - Krishna Ki Chetavani (Rashmirathi) | Shreeman Narayan Narayan Hari Hari | Krishna Bhajan</p>
+                        <p class="channel">Agam Aggarwal</p>
+                        <div class="reaching">
+                            <p class="view">10M views</p>
+                            <div class="seprator"></div>
+                            <p class="date">1 year ago</p>
+                        </div>
+                    </div>
+                    <div class="more-button">
+                        <img src="things/videos/3-dots.svg" alt="three dots">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-div">
+                <div class="image">
+                    <img class="thumbnail" src="things/videos/2.webp" alt="Thumbnail image">
+                </div>
+                <div class="viedo-cap">
+                    <div class="user">
+                        <img class="user-image" src="things/videos/channels-profile2.jpg" alt="user-image">
+                    </div>
+                    <div class="about-video">
+                        <p class="title">Agam - Krishna Ki Chetavani (Rashmirathi) | Shreeman Narayan Narayan Hari Hari | Krishna Bhajan</p>
+                        <p class="channel">Agam Aggarwal</p>
+                        <div class="reaching">
+                            <p class="view">10M views</p>
+                            <div class="seprator"></div>
+                            <p class="date">1 year ago</p>
+                        </div>
+                    </div>
+                    <div class="more-button">
+                        <img src="things/videos/3-dots.svg" alt="three dots">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-div">
+                <div class="image">
+                    <img class="thumbnail" src="things/videos/2.webp" alt="Thumbnail image">
+                </div>
+                <div class="viedo-cap">
+                    <div class="user">
+                        <img class="user-image" src="things/videos/channels-profile2.jpg" alt="user-image">
+                    </div>
+                    <div class="about-video">
+                        <p class="title">Agam - Krishna Ki Chetavani (Rashmirathi) | Shreeman Narayan Narayan Hari Hari | Krishna Bhajan</p>
+                        <p class="channel">Agam Aggarwal</p>
+                        <div class="reaching">
+                            <p class="view">10M views</p>
+                            <div class="seprator"></div>
+                            <p class="date">1 year ago</p>
+                        </div>
+                    </div>
+                    <div class="more-button">
+                        <img src="things/videos/3-dots.svg" alt="three dots">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-div">
+                <div class="image">
+                    <img class="thumbnail" src="things/videos/2.webp" alt="Thumbnail image">
+                </div>
+                <div class="viedo-cap">
+                    <div class="user">
+                        <img class="user-image" src="things/videos/channels-profile2.jpg" alt="user-image">
+                    </div>
+                    <div class="about-video">
+                        <p class="title">Agam - Krishna Ki Chetavani (Rashmirathi) | Shreeman Narayan Narayan Hari Hari | Krishna Bhajan</p>
+                        <p class="channel">Agam Aggarwal</p>
+                        <div class="reaching">
+                            <p class="view">10M views</p>
+                            <div class="seprator"></div>
+                            <p class="date">1 year ago</p>
+                        </div>
+                    </div>
+                    <div class="more-button">
+                        <img src="things/videos/3-dots.svg" alt="three dots">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-div">
+                <div class="image">
+                    <img class="thumbnail" src="things/videos/2.webp" alt="Thumbnail image">
+                </div>
+                <div class="viedo-cap">
+                    <div class="user">
+                        <img class="user-image" src="things/videos/channels-profile2.jpg" alt="user-image">
+                    </div>
+                    <div class="about-video">
+                        <p class="title">Agam - Krishna Ki Chetavani (Rashmirathi) | Shreeman Narayan Narayan Hari Hari | Krishna Bhajan</p>
+                        <p class="channel">Agam Aggarwal</p>
+                        <div class="reaching">
+                            <p class="view">10M views</p>
+                            <div class="seprator"></div>
+                            <p class="date">1 year ago</p>
+                        </div>
+                    </div>
+                    <div class="more-button">
+                        <img src="things/videos/3-dots.svg" alt="three dots">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-div">
+                <div class="image">
+                    <img class="thumbnail" src="things/videos/2.webp" alt="Thumbnail image">
+                </div>
+                <div class="viedo-cap">
+                    <div class="user">
+                        <img class="user-image" src="things/videos/channels-profile2.jpg" alt="user-image">
+                    </div>
+                    <div class="about-video">
+                        <p class="title">Agam - Krishna Ki Chetavani (Rashmirathi) | Shreeman Narayan Narayan Hari Hari | Krishna Bhajan</p>
+                        <p class="channel">Agam Aggarwal</p>
+                        <div class="reaching">
+                            <p class="view">10M views</p>
+                            <div class="seprator"></div>
+                            <p class="date">1 year ago</p>
+                        </div>
+                    </div>
+                    <div class="more-button">
+                        <img src="things/videos/3-dots.svg" alt="three dots">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-div">
+                <div class="image">
+                    <img class="thumbnail" src="things/videos/2.webp" alt="Thumbnail image">
+                </div>
+                <div class="viedo-cap">
+                    <div class="user">
+                        <img class="user-image" src="things/videos/channels-profile2.jpg" alt="user-image">
+                    </div>
+                    <div class="about-video">
+                        <p class="title">Agam - Krishna Ki Chetavani (Rashmirathi) | Shreeman Narayan Narayan Hari Hari | Krishna Bhajan</p>
+                        <p class="channel">Agam Aggarwal</p>
+                        <div class="reaching">
+                            <p class="view">10M views</p>
+                            <div class="seprator"></div>
+                            <p class="date">1 year ago</p>
+                        </div>
+                    </div>
+                    <div class="more-button">
+                        <img src="things/videos/3-dots.svg" alt="three dots">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-div">
+                <div class="image">
+                    <img class="thumbnail" src="things/videos/2.webp" alt="Thumbnail image">
+                </div>
+                <div class="viedo-cap">
+                    <div class="user">
+                        <img class="user-image" src="things/videos/channels-profile2.jpg" alt="user-image">
+                    </div>
+                    <div class="about-video">
+                        <p class="title">Agam - Krishna Ki Chetavani (Rashmirathi) | Shreeman Narayan Narayan Hari Hari | Krishna Bhajan</p>
+                        <p class="channel">Agam Aggarwal</p>
+                        <div class="reaching">
+                            <p class="view">10M views</p>
+                            <div class="seprator"></div>
+                            <p class="date">1 year ago</p>
+                        </div>
+                    </div>
+                    <div class="more-button">
+                        <img src="things/videos/3-dots.svg" alt="three dots">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-div">
+                <div class="image">
+                    <img class="thumbnail" src="things/videos/2.webp" alt="Thumbnail image">
+                </div>
+                <div class="viedo-cap">
+                    <div class="user">
+                        <img class="user-image" src="things/videos/channels-profile2.jpg" alt="user-image">
+                    </div>
+                    <div class="about-video">
+                        <p class="title">Agam - Krishna Ki Chetavani (Rashmirathi) | Shreeman Narayan Narayan Hari Hari | Krishna Bhajan</p>
+                        <p class="channel">Agam Aggarwal</p>
+                        <div class="reaching">
+                            <p class="view">10M views</p>
+                            <div class="seprator"></div>
+                            <p class="date">1 year ago</p>
+                        </div>
+                    </div>
+                    <div class="more-button">
+                        <img src="things/videos/3-dots.svg" alt="three dots">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-div">
+                <div class="image">
+                    <img class="thumbnail" src="things/videos/2.webp" alt="Thumbnail image">
+                </div>
+                <div class="viedo-cap">
+                    <div class="user">
+                        <img class="user-image" src="things/videos/channels-profile2.jpg" alt="user-image">
+                    </div>
+                    <div class="about-video">
+                        <p class="title">Agam - Krishna Ki Chetavani (Rashmirathi) | Shreeman Narayan Narayan Hari Hari | Krishna Bhajan</p>
+                        <p class="channel">Agam Aggarwal</p>
+                        <div class="reaching">
+                            <p class="view">10M views</p>
+                            <div class="seprator"></div>
+                            <p class="date">1 year ago</p>
+                        </div>
+                    </div>
+                    <div class="more-button">
+                        <img src="things/videos/3-dots.svg" alt="three dots">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-div">
+                <div class="image">
+                    <img class="thumbnail" src="things/videos/2.webp" alt="Thumbnail image">
+                </div>
+                <div class="viedo-cap">
+                    <div class="user">
+                        <img class="user-image" src="things/videos/channels-profile2.jpg" alt="user-image">
+                    </div>
+                    <div class="about-video">
+                        <p class="title">Agam - Krishna Ki Chetavani (Rashmirathi) | Shreeman Narayan Narayan Hari Hari | Krishna Bhajan</p>
+                        <p class="channel">Agam Aggarwal</p>
+                        <div class="reaching">
+                            <p class="view">10M views</p>
+                            <div class="seprator"></div>
+                            <p class="date">1 year ago</p>
+                        </div>
+                    </div>
+                    <div class="more-button">
+                        <img src="things/videos/3-dots.svg" alt="three dots">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-div">
+                <div class="image">
+                    <img class="thumbnail" src="things/videos/2.webp" alt="Thumbnail image">
+                </div>
+                <div class="viedo-cap">
+                    <div class="user">
+                        <img class="user-image" src="things/videos/channels-profile2.jpg" alt="user-image">
+                    </div>
+                    <div class="about-video">
+                        <p class="title">Agam - Krishna Ki Chetavani (Rashmirathi) | Shreeman Narayan Narayan Hari Hari | Krishna Bhajan</p>
+                        <p class="channel">Agam Aggarwal</p>
+                        <div class="reaching">
+                            <p class="view">10M views</p>
+                            <div class="seprator"></div>
+                            <p class="date">1 year ago</p>
+                        </div>
+                    </div>
+                    <div class="more-button">
+                        <img src="things/videos/3-dots.svg" alt="three dots">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-div">
+                <div class="image">
+                    <img class="thumbnail" src="things/videos/2.webp" alt="Thumbnail image">
+                </div>
+                <div class="viedo-cap">
+                    <div class="user">
+                        <img class="user-image" src="things/videos/channels-profile2.jpg" alt="user-image">
+                    </div>
+                    <div class="about-video">
+                        <p class="title">Agam - Krishna Ki Chetavani (Rashmirathi) | Shreeman Narayan Narayan Hari Hari | Krishna Bhajan</p>
+                        <p class="channel">Agam Aggarwal</p>
+                        <div class="reaching">
+                            <p class="view">10M views</p>
+                            <div class="seprator"></div>
+                            <p class="date">1 year ago</p>
+                        </div>
+                    </div>
+                    <div class="more-button">
+                        <img src="things/videos/3-dots.svg" alt="three dots">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-div">
+                <div class="image">
+                    <img class="thumbnail" src="things/videos/2.webp" alt="Thumbnail image">
+                </div>
+                <div class="viedo-cap">
+                    <div class="user">
+                        <img class="user-image" src="things/videos/channels-profile2.jpg" alt="user-image">
+                    </div>
+                    <div class="about-video">
+                        <p class="title">Agam - Krishna Ki Chetavani (Rashmirathi) | Shreeman Narayan Narayan Hari Hari | Krishna Bhajan</p>
+                        <p class="channel">Agam Aggarwal</p>
+                        <div class="reaching">
+                            <p class="view">10M views</p>
+                            <div class="seprator"></div>
+                            <p class="date">1 year ago</p>
+                        </div>
+                    </div>
+                    <div class="more-button">
+                        <img src="things/videos/3-dots.svg" alt="three dots">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-div">
+                <div class="image">
+                    <img class="thumbnail" src="things/videos/2.webp" alt="Thumbnail image">
+                </div>
+                <div class="viedo-cap">
+                    <div class="user">
+                        <img class="user-image" src="things/videos/channels-profile2.jpg" alt="user-image">
+                    </div>
+                    <div class="about-video">
+                        <p class="title">Agam - Krishna Ki Chetavani (Rashmirathi) | Shreeman Narayan Narayan Hari Hari | Krishna Bhajan</p>
+                        <p class="channel">Agam Aggarwal</p>
+                        <div class="reaching">
+                            <p class="view">10M views</p>
+                            <div class="seprator"></div>
+                            <p class="date">1 year ago</p>
+                        </div>
+                    </div>
+                    <div class="more-button">
+                        <img src="things/videos/3-dots.svg" alt="three dots">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-div">
+                <div class="image">
+                    <img class="thumbnail" src="things/videos/2.webp" alt="Thumbnail image">
+                </div>
+                <div class="viedo-cap">
+                    <div class="user">
+                        <img class="user-image" src="things/videos/channels-profile2.jpg" alt="user-image">
+                    </div>
+                    <div class="about-video">
+                        <p class="title">Agam - Krishna Ki Chetavani (Rashmirathi) | Shreeman Narayan Narayan Hari Hari | Krishna Bhajan</p>
+                        <p class="channel">Agam Aggarwal</p>
+                        <div class="reaching">
+                            <p class="view">10M views</p>
+                            <div class="seprator"></div>
+                            <p class="date">1 year ago</p>
+                        </div>
+                    </div>
+                    <div class="more-button">
+                        <img src="things/videos/3-dots.svg" alt="three dots">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-div">
+                <div class="image">
+                    <img class="thumbnail" src="things/videos/2.webp" alt="Thumbnail image">
+                </div>
+                <div class="viedo-cap">
+                    <div class="user">
+                        <img class="user-image" src="things/videos/channels-profile2.jpg" alt="user-image">
+                    </div>
+                    <div class="about-video">
+                        <p class="title">Agam - Krishna Ki Chetavani (Rashmirathi) | Shreeman Narayan Narayan Hari Hari | Krishna Bhajan</p>
+                        <p class="channel">Agam Aggarwal</p>
+                        <div class="reaching">
+                            <p class="view">10M views</p>
+                            <div class="seprator"></div>
+                            <p class="date">1 year ago</p>
+                        </div>
+                    </div>
+                    <div class="more-button">
+                        <img src="things/videos/3-dots.svg" alt="three dots">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-div">
+                <div class="image">
+                    <img class="thumbnail" src="things/videos/2.webp" alt="Thumbnail image">
+                </div>
+                <div class="viedo-cap">
+                    <div class="user">
+                        <img class="user-image" src="things/videos/channels-profile2.jpg" alt="user-image">
+                    </div>
+                    <div class="about-video">
+                        <p class="title">Agam - Krishna Ki Chetavani (Rashmirathi) | Shreeman Narayan Narayan Hari Hari | Krishna Bhajan</p>
+                        <p class="channel">Agam Aggarwal</p>
+                        <div class="reaching">
+                            <p class="view">10M views</p>
+                            <div class="seprator"></div>
+                            <p class="date">1 year ago</p>
+                        </div>
+                    </div>
+                    <div class="more-button">
+                        <img src="things/videos/3-dots.svg" alt="three dots">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-div">
+                <div class="image">
+                    <img class="thumbnail" src="things/videos/2.webp" alt="Thumbnail image">
+                </div>
+                <div class="viedo-cap">
+                    <div class="user">
+                        <img class="user-image" src="things/videos/channels-profile2.jpg" alt="user-image">
+                    </div>
+                    <div class="about-video">
+                        <p class="title">Agam - Krishna Ki Chetavani (Rashmirathi) | Shreeman Narayan Narayan Hari Hari | Krishna Bhajan</p>
+                        <p class="channel">Agam Aggarwal</p>
+                        <div class="reaching">
+                            <p class="view">10M views</p>
+                            <div class="seprator"></div>
+                            <p class="date">1 year ago</p>
+                        </div>
+                    </div>
+                    <div class="more-button">
+                        <img src="things/videos/3-dots.svg" alt="three dots">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-div">
+                <div class="image">
+                    <img class="thumbnail" src="things/videos/2.webp" alt="Thumbnail image">
+                </div>
+                <div class="viedo-cap">
+                    <div class="user">
+                        <img class="user-image" src="things/videos/channels-profile2.jpg" alt="user-image">
+                    </div>
+                    <div class="about-video">
+                        <p class="title">Agam - Krishna Ki Chetavani (Rashmirathi) | Shreeman Narayan Narayan Hari Hari | Krishna Bhajan</p>
+                        <p class="channel">Agam Aggarwal</p>
+                        <div class="reaching">
+                            <p class="view">10M views</p>
+                            <div class="seprator"></div>
+                            <p class="date">1 year ago</p>
+                        </div>
+                    </div>
+                    <div class="more-button">
+                        <img src="things/videos/3-dots.svg" alt="three dots">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-div">
+                <div class="image">
+                    <img class="thumbnail" src="things/videos/2.webp" alt="Thumbnail image">
+                </div>
+                <div class="viedo-cap">
+                    <div class="user">
+                        <img class="user-image" src="things/videos/channels-profile2.jpg" alt="user-image">
+                    </div>
+                    <div class="about-video">
+                        <p class="title">Agam - Krishna Ki Chetavani (Rashmirathi) | Shreeman Narayan Narayan Hari Hari | Krishna Bhajan</p>
+                        <p class="channel">Agam Aggarwal</p>
+                        <div class="reaching">
+                            <p class="view">10M views</p>
+                            <div class="seprator"></div>
+                            <p class="date">1 year ago</p>
+                        </div>
+                    </div>
+                    <div class="more-button">
+                        <img src="things/videos/3-dots.svg" alt="three dots">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-div">
+                <div class="image">
+                    <img class="thumbnail" src="things/videos/2.webp" alt="Thumbnail image">
+                </div>
+                <div class="viedo-cap">
+                    <div class="user">
+                        <img class="user-image" src="things/videos/channels-profile2.jpg" alt="user-image">
+                    </div>
+                    <div class="about-video">
+                        <p class="title">Agam - Krishna Ki Chetavani (Rashmirathi) | Shreeman Narayan Narayan Hari Hari | Krishna Bhajan</p>
+                        <p class="channel">Agam Aggarwal</p>
+                        <div class="reaching">
+                            <p class="view">10M views</p>
+                            <div class="seprator"></div>
+                            <p class="date">1 year ago</p>
+                        </div>
+                    </div>
+                    <div class="more-button">
+                        <img src="things/videos/3-dots.svg" alt="three dots">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-div">
+                <div class="image">
+                    <img class="thumbnail" src="things/videos/2.webp" alt="Thumbnail image">
+                </div>
+                <div class="viedo-cap">
+                    <div class="user">
+                        <img class="user-image" src="things/videos/channels-profile2.jpg" alt="user-image">
+                    </div>
+                    <div class="about-video">
+                        <p class="title">Agam - Krishna Ki Chetavani (Rashmirathi) | Shreeman Narayan Narayan Hari Hari | Krishna Bhajan</p>
+                        <p class="channel">Agam Aggarwal</p>
+                        <div class="reaching">
+                            <p class="view">10M views</p>
+                            <div class="seprator"></div>
+                            <p class="date">1 year ago</p>
+                        </div>
+                    </div>
+                    <div class="more-button">
+                        <img src="things/videos/3-dots.svg" alt="three dots">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-div">
+                <div class="image">
+                    <img class="thumbnail" src="things/videos/2.webp" alt="Thumbnail image">
+                </div>
+                <div class="viedo-cap">
+                    <div class="user">
+                        <img class="user-image" src="things/videos/channels-profile2.jpg" alt="user-image">
+                    </div>
+                    <div class="about-video">
+                        <p class="title">Agam - Krishna Ki Chetavani (Rashmirathi) | Shreeman Narayan Narayan Hari Hari | Krishna Bhajan</p>
+                        <p class="channel">Agam Aggarwal</p>
+                        <div class="reaching">
+                            <p class="view">10M views</p>
+                            <div class="seprator"></div>
+                            <p class="date">1 year ago</p>
+                        </div>
+                    </div>
+                    <div class="more-button">
+                        <img src="things/videos/3-dots.svg" alt="three dots">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+     </main>
 </body>
 </html>
