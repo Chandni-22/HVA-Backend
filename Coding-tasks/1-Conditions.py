@@ -152,7 +152,7 @@ Sample Input 1:
 Sample Output 1: 
 15 16 23
 Sample Input 2: 
-8 5 9
+9 8 5
 Sample Output 2: 
 5 8 9
 '''

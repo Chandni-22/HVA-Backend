@@ -13,7 +13,7 @@ Out of all these, the subarray with 4 increasing numbers is the longest.'''
 # arr=list(map(int,input("Enter an array: ").split()))
 # l=len(arr)
 # i=0
-# long=0
+# long=1
 # count=1
 # while i<(l-1):
 #     if arr[i]>arr[i+1]:
@@ -23,7 +23,10 @@ Out of all these, the subarray with 4 increasing numbers is the longest.'''
 #     else:
 #         count+=1
 #     i+=1
-# print(long)
+# if long<count:
+#     print(count)   
+# else:
+#     print(long)
 
 
 '''2.) Reverse an Array: You are given an array of integers. Create a new array with elements in reverse order. Print the new array.
@@ -33,11 +36,11 @@ Sample Output:
 7 3 21 13 1 11'''
 # arr=list(map(int,input("Enter an array: ").split()))
 # l=len(arr)
-# i=0
+# i=l-1
 # long=[]
-# while i<l:
+# while i>=0:
 #     long+=[arr[i]]
-#     i+=1
+#     i-=1
 # print(long)
 
 
@@ -95,22 +98,25 @@ Sample Input:
 Sample Output:
 0 7
 Explanation: Minimum Difference: 4 - 4 = 0. Maximum Difference: 11 - 4 = 7'''
-# arr=list(map(int,input("Enter an array: ").split()))
+# arr=list(map(int, input("Enter an array: ").split()))
 # l=len(arr)
-# Min,Max=0,0
-# i=0
-# while i<l:
-#     j=0
-#     while j<l:
-#         if i!=j:
-#             diff=abs(arr[i]-arr[j])
-#             if diff>Max:
-#                 Max=diff
-#             if diff<Min:
-#                 Min=diff
-#         j+=1
-#     i+=1
-# print(Min,Max)
+# if l==1:
+#     print("Array has only one element. Min and Max differences are not defined.")
+# else:  
+#   Min,Max=float('inf'),0
+#   i=0
+#   while i<l:
+#       j=0
+#       while j<l:
+#           if i!=j:
+#               diff=abs(arr[i]-arr[j])
+#               if diff>Max:
+#                   Max=diff
+#               if diff<Min:
+#                   Min=diff
+#           j+=1
+#       i+=1
+#   print(Min,Max)
 
 
 '''6.) Sum of Array Except Self: You are given an array of integers. Print an array where each index has the sum of all numbers in the original array except the number at that index. 

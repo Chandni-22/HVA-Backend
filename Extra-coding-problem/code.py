@@ -119,3 +119,38 @@ Output: [0,1]
 #         print(arr[i:j])
 #         j+=1
 #     i+=1
+
+
+'''----------->>'''
+# input_str="9a3B59"
+# my_string = list(input_str)
+# l = len(my_string)
+# i = 0
+
+# while i < l:
+#     if my_string[i].isdigit():
+#         my_string[i] = str((int(my_string[i]) + 1) % 10)
+#     elif my_string[i].isalpha():
+#         if ((i+1) % 4 == 0) and ((i+1) % 6 == 0):
+#             if my_string[i].lower() == 'x':
+#                 my_string[i] = 'a' if my_string[i].islower() else 'A'
+#             elif my_string[i].lower() == 'y':
+#                 my_string[i] = 'b' if my_string[i].islower() else 'B'
+#             elif my_string[i].lower() == 'z':
+#                 my_string[i] = 'c' if my_string[i].islower() else 'C'
+#             else:
+#                 my_string[i] = chr(ord(my_string[i]) + 3)
+#         elif (i+1) % 4 == 0:
+#             my_string[i] = my_string[i].upper() if my_string[i].islower() else my_string[i].lower()
+#         elif (i+1) % 6 == 0:
+#             if my_string[i].lower() == 'a':
+#                 my_string[i] = 'y' if my_string[i].islower() else 'Y'
+#             elif my_string[i].lower() == 'b':
+#                 my_string[i] = 'z' if my_string[i].islower() else 'Z'
+#             else:
+#                 my_string[i] = chr(ord(my_string[i]) - 2)
+    
+#     i += 1
+
+# my_string = "".join(my_string)
+# print(my_string)

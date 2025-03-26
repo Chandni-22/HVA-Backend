@@ -5,13 +5,17 @@ Sample Input:
 10
 Sample Output: 
 0 1 1 2 3 5 8 13 21 34'''
-# n=int(input("Enter number: "))
-# a,b=0,1
-# i=0
-# while i<n:
-#     print(a,end=" ")
-#     a,b=b,a+b
-#     i+=1
+# n=int(input("Enter number: "))--> o(1)
+# a,b=0,1-->o(1)
+# i=0-->o(1)
+# while i<n:-->o(n-i)*o(3)
+#     print(a,end=" ")-->o(1)
+#     a,b=b,a+b-->o(1)
+#     i+=1-->o(1)
+
+# Time=o(3)+(o(n-i)*o(3))-->o(1)+o(n)-->o(n)
+
+# l=[1,2,3,4,5,6,7,8,9]
 
 
 '''2.) Reverse a Number: Write a program that takes a number n as input and prints the reverse of the given number.
